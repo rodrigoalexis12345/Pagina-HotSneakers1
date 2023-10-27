@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: #0c192c;
+  width: 100%;
+  height: 100%;
+  /*Chat.gpt */
+}
+nav {
+  background-color: #dee57c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: top 20px;
+  padding-left: 0%;
+  padding-right: 9%;
+  font-weight: bold;
+}
+h1 {
+  color: rgb(38, 41, 208);
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+  display: inline-block;
+  padding: 0px 3.1px; /*Para darle Margen al menu de navegacion */
+}
+
+a {
+  color: rgb(255, 1, 1);
+  text-decoration: none;
+}
+a:hover {
+  color: aqua;
+}
+.HotSneaker {
+  margin-right: 90px; /*Para acercar la imagen al H1 */
+}
+
+/*Carrusel*/
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+.slider-frame {
+  width: 101.1%; /*Imagen */
+  margin: -0.5%; /*Margen */
+  padding: 0%;
+  overflow: hidden;
+  margin-top: 0px;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0%;
+  width: 400%;
+
+  animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+/*Fondo de pantalla*/
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  max-width: 100%;
+}
+.burbujas {
+  position: relative;
+  display: flex;
+}
+.burbujas span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #4fc3dc;
+  border-radius: 50px;
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px#4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+.burbujas span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: scale(1vh) scale(1);
+  }
+}
+/*Debajo del carrusel */
+.Img {
+  width: 200px;
+  height: 100px;
+  border-radius: 200%; /*Para darle borde al circulo */
+  object-fit: cover;
+  background-color: #dee57c; /*Para darle color al ciculo */
+  /* */
+  position: relative;
+  left: 200px;
+  filter: saturate(2); /*Es para saturar */
+}
+.Contenido {
+  display: flex;
+  margin: 0px;
+  background-image: url(Imagenes/Fondo-zapato.jpg);
+}
+.articulos {
+  width: 80%;
+  border-right: 3px;
+}
+.secciones {
+  display: flex;
+  align-items: center;
+  padding: 50px; /*Margen */
+  background-image: url(Imagenes/Fondo-zapato.jpg);
+}
+#acerca-de-nosotros {
+  color: #131313;
+  padding: 10px; /*Borde */
+  font-size: x-large;
+  position: relative;
+  left: 150px;
+  margin-top: -8px;
+}
+/*Video */
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 100%; /* El video ocupará el 70% del espacio disponible en el contenedor */
+  max-height: 500px; /* Establece una altura máxima para el video  500px computadora  Laptop 565px */
+}
+.Img1 {
+  width: 19.1%; /* Las imágenes ocuparán el 15% del espacio disponible en el contenedor */
+  height: 20%; /* Establece una altura máxima para las imágenes */
+  object-fit: fill;
+}
+.Img2 {
+  width: 19.1%; /* Las imágenes ocuparán el 15% del espacio disponible en el contenedor */
+  max-height: 20%; /* Establece una altura máxima para las imágenes */
+  object-fit: cover;
+}
+/*Animacion*/
+.scene {
+  position: relative;
+  width: 400px;
+  height: 0px;
+}
+
+.person {
+  width: 20px; /* Achicar el tamaño de la persona */
+  height: 50px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 1px; /*Para  que la persona se acerque al zapato */
+  animation: chase-person 20s linear infinite;
+  /* */
+  top: -550px; /*Para subir la imagen o bajarla */
+}
+
+.shoe {
+  width: 0px; /* Achicar el tamaño del zapato */
+  height: 0px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 80px; /*Para que el zapato se acerca a la persona */
+  animation: chase-shoe 20s linear infinite;
+  /* */
+  top: -450px; /*Para subir la imagen o bajarla */
+}
+
+@keyframes chase-person {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px); /* La persona llega al zapato en 6 segundos */
+  }
+}
+
+@keyframes chase-shoe {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(500px); /* El zapato se aleja en 6 segundos */
+  }
+}
+/* boton*/
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden; /*Oculta los elementos que estan fuera del contenedor*/
+  transition: 0.2s;
+}
+.btn-neon:hover {
+  background: #a945c7;
+  box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+  transition-delay: 1s;
+}
+.btn-neon span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #a945c7);
+}
+.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+/*SPAN */
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #a945c7);
+}
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+/*SPAN 2 */
+#span2 {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #a945c7);
+}
+.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+/*Span4 */
+#span4 {
+  bottom: 100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #a945c7);
+}
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+/*Footer */
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 8%;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+.Redes-sociales,
+.Menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.Redes-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  background-image: url(Imagenes/Fondo-zapato.jpg);
+  background-position: center;
+  background-size: 40%;
+  background: no-repeat;
+  margin: 1rem;
+}
+.Redes-icon:hover {
+  background-color: #121212;
+  filter: invert(1);
+}
+.Redes-icon:nth-of-type(1) {
+  background-image: url(Imagenes/FacebookBlanco.png);
+}
+.Redes-icon:nth-of-type(2) {
+  background-image: url(Imagenes/InstagramBlanco.png);
+}
+
+.Redes-icon:nth-of-type(3) {
+  background-image: url(Imagenes/LinkedinBlanco.png);
+}
+.Redes-icon:nth-of-type(4) {
+  background-image: url(Imagenes/Twitter.png);
+}
+.Menu {
+  list-style-type: none;
+  color: #f2f2f2;
+  font-size: 18px;
+}
+.Menu1 {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.Menu1:hover {
+  opacity: 1;
+}
+.copiryght {
+  color: #f2f2f2;
+  opacity: 0, 3;
+  text-align: center;
+}
