@@ -6,39 +6,86 @@
     <title>Ubicación</title>
     <style>
       .Imagen {
-      margin-top: -450px;
+      margin-top: -500px;
       text-align: center;
       text-align: right;
-      
       }
+      .h1-2{
+        color: rgb(169, 218, 9);
+        text-align: center;
+        margin-top: -110px;
+        font-size:40px;
+        margin-left: 460px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+      }
+      .h1-2:hover{
+        color: blue;
+        transition: 1s;
+      }
+      .Borde{
+        border: 10px solid #b1db86;
+        height: 500px;
+        width: 850px;
+        
+      }
+      
+      #videoFondo1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  h1{
+    color: rgb(207, 147, 17);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+  }
+  p{
+    color: rgb(61, 174, 144);
+    font-size: 20px;
+    margin-top: -15px;
+
+  }
+      
     </style>
   </head>
   <body>
+    <video   autoplay loop muted id="videoFondo1">
+      <source
+        src="img Ubicacion/Video.Fondo.mp4"
+        type="video/mp4"
+      />
+    </video>
     <h1>Contacto</h1>
     <p>
       Paurcapata
       <br />
       P.j Cdad. Blanca Zona C
     </p>
-    <hr />
     </div>
-    <div class="Imagen1">
+    
+  <div class="Borde">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61233.346026439816!2d-71.51512121808072!3d-16.420553283408815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424b60cb347581%3A0x76922d9aa76602c!2sPaucarpata!5e0!3m2!1ses-419!2spe!4v1698412392734!5m2!1ses-419!2spe" 
-      width="800"
-      height="500"
+      height="500px"
+      width="850px"
       style="border: 0"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"   
     ></iframe>
+  </div>
+
     <div class="Imagen">
-      <img
-        src="Corre ya.gif"
+      <img 
+        src="Corre ya.gif" 
         alt="Descripción del GIF"
         width="%"
         height="auto"
       />
+      <h1 class="h1-2"> VAMOS</h1>
     </div>
       </div>
   </body>
