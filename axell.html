@@ -3,9 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Productos</title>
+    <link rel="stylesheet" href="/animacion.css">
+    <link rel="stylesheet" href="/productos.css">
 </head>
 <body>
-    <h2>8</h2>
+    <header>
+        <h1>Productos</h1>
+
+        <div class="continer-carrito">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                stroke="currentColor" class="icom-cart" id="compras">
+                <path strokeLinecap="round" strokeLinejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+
+                <span class="contador-productos">0</span>
+        </div>
+    </header>
+
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:24;"></span>
+    </div>
+
+    <div class="container-product">
+        <div class="iten">
+            <figure>
+                <img src="/img/TACONES.png" alt="">
+            </figure>
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Tacones</h2>
+                <p class="price">S/275.00</p>
+                <button type="button" id="miBoton">Comprar</button>
+                <script>
+                document.getElementById("miBoton").addEventListener("click", function () {
+                    window.open("/tacones.html", "_blank");
+                    });
+                    </script>
+            </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/CHIMPUNES.png" alt="">
+            </figure>
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Chimpunes</h2>
+                <p class="price">S/340.00</p>
+                <button type="button" id="miBoton1">Comprar</button>
+                <script>
+                    document.getElementById("miBoton1").addEventListener("click", function () {
+                        window.open("/chimpunes.html", "_blank");
+                        });
+                        </script>
+
+            </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/FORMALES.png" alt="">
+            </figure>
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Zapatos</h2>
+                <p class="price">S/200.00</p>
+                <button type="button" id="miBoton2">Comprar</button>
+                <script>
+                    document.getElementById("miBoton2").addEventListener("click", function () {
+                        window.open("/formales.html", "_blank");
+                        });
+                        </script>
+            </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/JORDAN.png" alt="">
+            </figure>
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Nike</h2>
+                <p class="price">S/355.00</p>
+                <button type="button" id="miBoton3">Comprar</button>
+                <script>
+                    document.getElementById("miBoton3").addEventListener("click", function () {
+                        window.open("/jordan.html", "_blank");
+                        });
+                        </script>
+            </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/SALIDA.png" alt="">
+            </figure>
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Mocasines</h2>
+                <p class="price">S/190.00</p>
+                <button type="button" id="miBoton4">Comprar</button>
+                <script>
+                    document.getElementById("miBoton4").addEventListener("click", function () {
+                        window.open("/mocasines.html", "_blank");
+                        });
+                        </script>
+            </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/CAMINATA.png" alt="">
+            </figure>
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Zapatillas Deportivas</h2>
+                <p class="price">S/250.00</p>
+                <button type="button" id="miBoton5">Comprar</button>
+                <script>
+                    document.getElementById("miBoton5").addEventListener("click", function () {
+                        window.open("/deportivas.html", "_blank");
+                        });
+                        </script>
+                    </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/JORDAN-BLCRJ.png" alt="">
+            </figure>
+
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Jordan Peruno</h2>
+                <p class="price">S/420.00</p>
+                <button type="button" id="miBoton6">Comprar</button>
+                <script>
+                    document.getElementById("miBoton6").addEventListener("click", function () {
+                        window.open("/JP.html", "_blank");
+                        });
+                        </script>
+        </div>
+            </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/JORDAN-RS.png" alt="">
+            </figure>
+
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Jordan Rosa</h2>
+                <p class="price">S/400.00</p>
+                <button type="button" id="miBoton7">Comprar</button>
+                <script>
+                    document.getElementById("miBoton7").addEventListener("click", function () {
+                        window.open("/JRS.html", "_blank");
+                        });
+                        </script>
+                        </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/JORDAN-SUBM.png" alt="">
+            </figure>
+
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Jordan  Azul</h2>
+                <p class="price">S/425.00</p>
+                <button type="button" id="miBoton8">Comprar</button>
+                <script>
+                    document.getElementById("miBoton8").addEventListener("click", function () {
+                        window.open("/JSUBT.html", "_blank");
+                        });
+                        </script>
+                        </div>
+        </div>
+        <div class="iten">
+            <figure>
+                <img src="/img/NIKKE-CLFULL.png" alt="">
+            </figure>
+
+            <div class="infor-produc">
+                <h2 style="text-align: center;">Pumas</h2>
+                <p class="price">S/380.00</p>
+                <button type="button" id="miBoton9">Comprar</button>
+                <script>
+                    document.getElementById("miBoton9").addEventListener("click", function () {
+                        window.open("/PUMASFULLCOLOR.html", "_blank");
+                        });
+                        </script>
+                </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>

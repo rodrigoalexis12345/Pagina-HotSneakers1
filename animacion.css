@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vh;
+    background: rgb(0, 0, 0);
+}
+
+
+
+.bubbles{
+    position: relative;
+    display: flex;
+}
+
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: rgb(70, 232, 232);
+    margin: 0px 24px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #4fc3dc44,
+    0px 0px 50px rgb(70, 232, 232),
+    0px 0px 100px rgb(70, 232, 232);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+}
+
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0px 0px 0px 10px #ff2d7544,
+    0px 0px 50px #ff2d75,
+    0px 0px 100px #ff2d75;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s/ var(--i));
+}
+
+
+@keyframes animate{
+    0%{
+        transform: translateY(280vh) scale(0);
+    }
+    100%{
+       transform: translateY(-10vh) scale(1); 
+    }
+
+}
