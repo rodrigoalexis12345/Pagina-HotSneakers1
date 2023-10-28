@@ -1,0 +1,81 @@
+.cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1110px;
+    height:550px;
+    margin: 100px 0px 0px 290px ;
+    background-color: rgb(170, 248, 255, 0.096);
+    box-shadow: 0 15px 45px #ffffff;
+    border-radius: 2%;
+}
+
+.cuadro .imgen{
+    display: flex;
+    width: 570px;
+    height: 535px;
+    border-radius: 7%;
+}
+
+.imgen{
+    display: grid;
+    grid-template-columns: repeat(3,4fr);
+    gap: 26px;
+    width: 100px;
+    height: 200px;
+
+}
+
+.imgen img{
+    width: 570px;
+    height: 535px;
+    border-radius: 7%;
+    transition: all 2s;
+}
+
+.imgen figure{
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 7%;
+}
+
+.imgen:hover img{
+    transform: scale(1.1);
+    border-radius: 7%;
+
+}
+
+.detalles{
+    position: relative;
+    color: #ffffff;
+    height: 90%;
+    width: 490px;
+    margin: 0px 0px 0px 30px;
+    font-family: 'Courier New', Courier,;
+}
+
+.tallas ul{
+    display: flex;
+    justify-content:space-around;
+    font-family: 'Courier New', Courier,;
+
+}
+
+.tallas ul li{
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: solid 1px floralwhite;
+    padding: 0.5em;
+    border-radius: 20%;
+    font-family: 'Courier New', Courier,;
+    font-size: 1.2em;
+
+}
+
+.tallas ul li:hover{
+    background-color: rgba(0, 255, 255, 0.151);
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px 1px #ffffff;
+}

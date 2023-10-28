@@ -1,226 +1,230 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /*Establece el margen exterior en 0*/
+  padding: 0; /*Define el relleno en 0 para el elemento */
+  box-sizing: border-box; /* simplifica la forma en que se controlan los tamaños 
+  de los elementos en CSS.*/
 }
 body {
-  min-height: 100vh;
-  background: #0c192c;
-  width: 100%;
-  height: 100%;
-  /*Chat.gpt */
+  min-height: 100vh; /*Establece la altura mínima del elemento al 100% */
+  background: #0c192c; /*Define el color de la imagen*/
+  width: 100%; /*Ancho*/
+  height: 100%; /*Alto*/
 }
 nav {
-  background-color: #dee57c;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: top 20px;
-  padding-left: 0%;
-  padding-right: 9%;
-  font-weight: bold;
+  background-color: #dee57c; /*color de fondo*/
+  display: flex; /*contenedor flexible*/
+  align-items: center; /*esta centrando el elemento*/
+  justify-content: space-between; /*para distribuir el espacio entre los elementos segundarios*/
+  padding: 10px; /*relleno de 10px a todos los lados del elemento*/
+  padding-left: 0%; /*Establece relleno isquierdo*/
+  padding-right: 10%; /* Establece relleno derecho*/
+  font-weight: bold; /*Texto en negrita*/
+  font-size: 16px; /*Tamaño de letra*/
 }
 h1 {
-  color: rgb(38, 41, 208);
-  font-size: 45px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(38, 41, 208); /*color de h1*/
+  font-size: 45px; /*Tamaño de Letra*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*Tipó de letra*/
 }
 ul li {
-  display: inline-block;
-  padding: 0px 3.1px; /*Para darle Margen al menu de navegacion */
-}
-.zapato {
-  top: -50px;
+  display: inline-block; /*para que este en una misma linea  que otros elementos*/
+  padding: 0px 14px; /*Para darle Margen al menu de navegacion */
 }
 a {
-  color: rgb(255, 1, 1);
-  text-decoration: none;
+  color: rgb(255, 1, 1); /*color*/
+  text-decoration: none; /*Elimina la decoracion de subrayado de los enlaces hipertexto*/
 }
 a:hover {
-  color: aqua;
+  /*pseucodo para aplicar estilos cuando cursos pasa sobre el*/
+  color: aqua; /*Color */
 }
 .HotSneaker {
-  margin-right: 90px; /*Para acercar la imagen al H1 */
+  margin-right: 350px; /*controla el espacio o margen de lado */
 }
 
 /*Carrusel*/
 h2 {
-  text-align: center;
-  font-size: 2rem;
-  padding-top: 50px;
+  text-align: center; /*centrar el texto*/
+  font-size: 2rem; /*tamaño de letra*/
+  padding-top: 50px; /*para controlar la distancia entre el elemento y su borde superior*/
 }
 
 .slider-frame {
-  width: 101.1%; /*Imagen */
+  width: 101.1%; /*Ancho */
   margin: -0.5%; /*Margen */
-  padding: 0%;
-  overflow: hidden;
-  margin-top: 0px;
+  padding: 0%; /*para ajusta espacio entre el contenido*/
+  overflow: hidden; /*para ocultar contenido que se extiende mas alla de los limites*/
+  margin-top: 0px; /*ajustar la distancia entre elemntos*/
 }
 
 .slider-frame ul {
-  display: flex;
-  padding: 0%;
-  width: 400%;
+  display: flex; /*contenedor flexible*/
+  padding: 0%; /*para ajustar */
+  width: 400%; /*Ancho*/
 
-  animation: slide 20s infinite alternate ease-in-out;
+  animation: slide 20s infinite alternate ease-in-out; /*la animacion se repetira infinitamente 
+  hacia adelante y hacia atras ease para suavisar el inicio y el fin*/
 }
 .slider-frame li {
-  width: 100%;
-  list-style: none;
+  width: 100%; /*Ancho*/
+  list-style: none; /*para eliminar los marcadores o viñetas como listas desordenadas ul o ol*/
 }
 
 .slider-frame img {
-  width: 100%;
+  width: 100%; /*Ancho*/
 }
 
 @keyframes slide {
   0% {
-    margin-left: 0;
+    
+    margin-left: 0; /* Inicio de la animación, el margen izquierdo es 0*/
   }
   20% {
-    margin-left: 0;
+    margin-left: 0; /*Se mantiene izquierda en 0*/
   }
 
   25% {
-    margin-left: -100%;
+  
+    margin-left: -100%; /*comiensa hacia la izquierda -100 margen*/
   }
   45% {
-    margin-left: -100%;
+    
+    margin-left: -100%; /*continua el deslisamiento*/
   }
 
   50% {
-    margin-left: -200%;
+    margin-left: -200%; /*deslisamiento*/
   }
   70% {
-    margin-left: -200%;
+    margin-left: -200%; /*se mantiene el margen*/
   }
 
   75% {
-    margin-left: -300%;
+    margin-left: -300%; /*comiensa de nuevo*/
   }
   100% {
-    margin-left: -300%;
+    margin-left: -300%; /*Fin de animacion*/
   }
 }
 /*Fondo de pantalla*/
 .container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-  max-width: 100%;
+  position: relative; /**/
+  height: 100vh; /*Alto*/
+  overflow: hidden; /*para ocultar contenido que se extiende mas alla de los limites*/
+  max-width: 100%; /**/
 }
 .burbujas {
-  position: relative;
-  display: flex;
+  position: relative; /**/
+  display: flex; /**/
 }
 .burbujas span {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  background-color: #4fc3dc;
-  border-radius: 50px;
-  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px#4fc3dc;
-  animation: animate 15s linear infinite;
-  animation-duration: calc(125s / var(--i));
+  position: relative; /*Se pocisiona en su pocision original*/
+  width: 30px; /*Ancho*/
+  height: 30px; /*Alto*/
+  background-color: #4fc3dc; /*color de Fondo*/
+  border-radius: 50px; /*para redondear las esquinas*/
+  box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px#4fc3dc; /*para agregar sombras  */
+  animation: animate 15s linear infinite; /*animacion de 15 segundos que se reproduce en velocidad
+   constante que se reinicira una ves termine automaticamente*/
+  animation-duration: calc(125s / var(--i)); /*calcula la duracion dividiendo 125 segundos entre la variable i*/
 }
-.burbujas span:nth-child(even) {
-  background: #ff2d75;
-  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+.burbujas span:nth-child(even) { /*pseudo que selecciona hijos pares del span */
+  background: #ff2d75; /*Color*/
+  box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75; /*SOMBRAS*/
 }
 @keyframes animate {
-  0% {
-    transform: translateY(100vh) scale(0);
+  0% { /*La animacion comiensa en 0 el elemento se encuentra fuera de vista
+     desplazado hacia abajo en la dirrecion Y vertical por una distacia de  100vh con escala 0*/
+    transform: translateY(100vh) scale(0); /**/
   }
   100% {
-    transform: scale(1vh) scale(1);
+    transform: scale(1vh) scale(1); /*cuando la animacion alcansa el 100% vuelve denuevo a su posicion*/
   }
 }
 /*Debajo del carrusel */
 .Img {
-  width: 200px;
-  height: 100px;
+  width: 200px; /*Ancho*/
+  height: 100px; /*Alto*/
   border-radius: 200%; /*Para darle borde al circulo */
-  object-fit: cover;
+  object-fit: cover;/*Ajusta la imagen para que cubra completamente su contenedor*/
   background-color: #dee57c; /*Para darle color al ciculo */
   /* */
-  position: relative;
-  left: 200px;
+  position: relative; /*establece el pocisionamiento relativo del elemento*/
+  left: 200px; /*Izquierda*/
   filter: saturate(2); /*Es para saturar */
 }
 .Contenido {
-  display: flex;
-  margin: 0px;
+  display: flex; /*Contenedor flexible*/
+  margin: 0px; /*Establece margen de elemento*/
   background-image: url(Imagenes/Fondo-zapato.jpg);
 }
 .articulos {
-  width: 80%;
-  border-right: 3px;
+  width: 80%; /*Ancho*/
+  border-right: 3px; /*añade borde al lado derecho*/
 }
 .secciones {
-  display: flex;
-  align-items: center;
-  padding: 50px; /*Margen */
+  display: flex; /*Contenedor flexible*/
+  align-items: center; /*Centra el elemento*/
+  padding: 50px; /*Relleno de un elemento*/
   background-image: url(Imagenes/Fondo-zapato.jpg);
 }
 #acerca-de-nosotros {
-  color: #131313;
+  color: #131313; /*Color*/
   padding: 10px; /*Borde */
-  font-size: x-large;
-  position: relative;
-  left: 150px;
-  margin-top: -8px;
+  font-size: x-large; /*Letra*/
+  position: relative; /*Ajustar su pocision en relacion con su ubicacion original*/
+  left: 150px; /*Izquierda*/
+  margin-top: -8px; /*Define el Margen superior del Elemento*/
 }
 /*Video */
 .video-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; /*Contenedor flexible*/
+  align-items: center; /*Centra elemento*/
+  justify-content: center; /*alinear horizontalmente en el centro del contenedor*/
 }
 
 .video {
   width: 100%; /* El video ocupará el 70% del espacio disponible en el contenedor */
-  max-height: 500px; /* Establece una altura máxima para el video  500px computadora  Laptop 565px */
+  max-height: 565px; /* Establece una altura máxima para el video  500px computadora  Laptop 565px */
 }
 .Img1 {
   width: 19.1%; /* Las imágenes ocuparán el 15% del espacio disponible en el contenedor */
   height: 20%; /* Establece una altura máxima para las imágenes */
-  object-fit: fill;
+  object-fit: fill;/*el contenido se estira o encoge para llenar completamente el contenedor*/
 }
 .Img2 {
   width: 19.1%; /* Las imágenes ocuparán el 15% del espacio disponible en el contenedor */
   max-height: 20%; /* Establece una altura máxima para las imágenes */
-  object-fit: cover;
+  object-fit: cover;/*Se ajusta el contenido para llenar el contenedor sin afectar su aspecto original*/
 }
 /*Animacion*/
 .scene {
-  position: relative;
-  width: 400px;
-  height: 0px;
+  position: relative;/*permite ajustar su pocision con su  ubicacion original */
+  width: 400px;/*Ancho*/
+  height: 0px;/*Alto*/
 }
 
 .person {
   width: 20px; /* Achicar el tamaño de la persona */
-  height: 50px;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0;
+  height: 50px;/*Alto*/
+  background-color: transparent;/*Transparente*/
+  position: absolute;/*Para controlar la pocision exacta de un elemento de una pagina web*/
+  bottom: 0;/*se utilisa para pocisionar un elemento en la parte inferior*/
   left: 1px; /*Para  que la persona se acerque al zapato */
-  animation: chase-person 20s linear infinite;
-  /* */
+  animation: chase-person 20s linear infinite;/*animacion durara 20 segundos y se repitira infinitamente*/
   top: -550px; /*Para subir la imagen o bajarla */
 }
 
 .shoe {
   width: 0px; /* Achicar el tamaño del zapato */
-  height: 0px;
-  background-color: transparent;
-  position: absolute;
-  bottom: 0;
-  right: 80px; /*Para que el zapato se acerca a la persona */
-  animation: chase-shoe 20s linear infinite;
+  height: 0px;/*Alto*/
+  background-color: transparent;/*Transparente*/
+  position: absolute;/*Establece el pocisionamiento de un elemento*/
+  bottom: 0;/*para pocisionar un elemento*/
+  right: 80px; /* Derecha Para que el zapato se acerca a la persona */
+  animation: chase-shoe 20s linear infinite;/*animacion durara 20 segundos y se repitira infinitamente*/
   /* */
-  top: -450px; /*Para subir la imagen o bajarla */
+  top: -450px; /*establece pocision del elemento Para subir la imagen o bajarla */
 }
 
 @keyframes chase-person {
@@ -228,7 +232,7 @@ h2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(500px); /* La persona llega al zapato en 6 segundos */
+    transform: translateX(500px); /* La persona llega al zapato en 20 segundos */
   }
 }
 
@@ -237,7 +241,7 @@ h2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(500px); /* El zapato se aleja en 6 segundos */
+    transform: translateX(500px); /* El zapato se aleja en 20 segundos */
   }
 }
 /* boton*/
