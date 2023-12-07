@@ -6,7 +6,7 @@
 }
 body {
   min-height: 100vh; /*Establece la altura mínima del elemento al 100% */
-  background: #0c192c; /*Define el color de la imagen*/
+  background: #0e0e0e; /*Define el color de la imagen*/
   width: 100%; /*Ancho*/
   height: 100%; /*Alto*/
 }
@@ -76,7 +76,6 @@ h2 {
 
 @keyframes slide {
   0% {
-    
     margin-left: 0; /* Inicio de la animación, el margen izquierdo es 0*/
   }
   20% {
@@ -84,11 +83,9 @@ h2 {
   }
 
   25% {
-  
     margin-left: -100%; /*comiensa hacia la izquierda -100 margen*/
   }
   45% {
-    
     margin-left: -100%; /*continua el deslisamiento*/
   }
 
@@ -126,14 +123,18 @@ h2 {
   box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px#4fc3dc; /*para agregar sombras  */
   animation: animate 15s linear infinite; /*animacion de 15 segundos que se reproduce en velocidad
    constante que se reinicira una ves termine automaticamente*/
-  animation-duration: calc(125s / var(--i)); /*calcula la duracion dividiendo 125 segundos entre la variable i*/
+  animation-duration: calc(
+    125s / var(--i)
+  ); /*calcula la duracion dividiendo 125 segundos entre la variable i*/
 }
-.burbujas span:nth-child(even) { /*pseudo que selecciona hijos pares del span */
+.burbujas span:nth-child(even) {
+  /*pseudo que selecciona hijos pares del span */
   background: #ff2d75; /*Color*/
   box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75; /*SOMBRAS*/
 }
 @keyframes animate {
-  0% { /*La animacion comiensa en 0 el elemento se encuentra fuera de vista
+  0% {
+    /*La animacion comiensa en 0 el elemento se encuentra fuera de vista
      desplazado hacia abajo en la dirrecion Y vertical por una distacia de  100vh con escala 0*/
     transform: translateY(100vh) scale(0); /**/
   }
@@ -146,7 +147,7 @@ h2 {
   width: 200px; /*Ancho*/
   height: 100px; /*Alto*/
   border-radius: 200%; /*Para darle borde al circulo */
-  object-fit: cover;/*Ajusta la imagen para que cubra completamente su contenedor*/
+  object-fit: cover; /*Ajusta la imagen para que cubra completamente su contenedor*/
   background-color: #dee57c; /*Para darle color al ciculo */
   /* */
   position: relative; /*establece el pocisionamiento relativo del elemento*/
@@ -190,39 +191,39 @@ h2 {
 .Img1 {
   width: 19.1%; /* Las imágenes ocuparán el 15% del espacio disponible en el contenedor */
   height: 20%; /* Establece una altura máxima para las imágenes */
-  object-fit: fill;/*el contenido se estira o encoge para llenar completamente el contenedor*/
+  object-fit: fill; /*el contenido se estira o encoge para llenar completamente el contenedor*/
 }
 .Img2 {
   width: 19.1%; /* Las imágenes ocuparán el 15% del espacio disponible en el contenedor */
   max-height: 20%; /* Establece una altura máxima para las imágenes */
-  object-fit: cover;/*Se ajusta el contenido para llenar el contenedor sin afectar su aspecto original*/
+  object-fit: cover; /*Se ajusta el contenido para llenar el contenedor sin afectar su aspecto original*/
 }
 /*Animacion*/
 .scene {
-  position: relative;/*permite ajustar su pocision con su  ubicacion original */
-  width: 400px;/*Ancho*/
-  height: 0px;/*Alto*/
+  position: relative; /*permite ajustar su pocision con su  ubicacion original */
+  width: 400px; /*Ancho*/
+  height: 0px; /*Alto*/
 }
 
 .person {
   width: 20px; /* Achicar el tamaño de la persona */
-  height: 50px;/*Alto*/
-  background-color: transparent;/*Transparente*/
-  position: absolute;/*Para controlar la pocision exacta de un elemento de una pagina web*/
-  bottom: 0;/*se utilisa para pocisionar un elemento en la parte inferior*/
+  height: 50px; /*Alto*/
+  background-color: transparent; /*Transparente*/
+  position: absolute; /*Para controlar la pocision exacta de un elemento de una pagina web*/
+  bottom: 0; /*se utilisa para pocisionar un elemento en la parte inferior*/
   left: 1px; /*Para  que la persona se acerque al zapato */
-  animation: chase-person 20s linear infinite;/*animacion durara 20 segundos y se repitira infinitamente*/
+  animation: chase-person 20s linear infinite; /*animacion durara 20 segundos y se repitira infinitamente*/
   top: -550px; /*Para subir la imagen o bajarla */
 }
 
 .shoe {
   width: 0px; /* Achicar el tamaño del zapato */
-  height: 0px;/*Alto*/
-  background-color: transparent;/*Transparente*/
-  position: absolute;/*Establece el pocisionamiento de un elemento*/
-  bottom: 0;/*para pocisionar un elemento*/
+  height: 0px; /*Alto*/
+  background-color: transparent; /*Transparente*/
+  position: absolute; /*Establece el pocisionamiento de un elemento*/
+  bottom: 0; /*para pocisionar un elemento*/
   right: 80px; /* Derecha Para que el zapato se acerca a la persona */
-  animation: chase-shoe 20s linear infinite;/*animacion durara 20 segundos y se repitira infinitamente*/
+  animation: chase-shoe 20s linear infinite; /*animacion durara 20 segundos y se repitira infinitamente*/
   /* */
   top: -450px; /*establece pocision del elemento Para subir la imagen o bajarla */
 }
@@ -232,7 +233,9 @@ h2 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(500px); /* La persona llega al zapato en 20 segundos */
+    transform: translateX(
+      500px
+    ); /* La persona llega al zapato en 20 segundos */
   }
 }
 
@@ -385,4 +388,15 @@ footer {
   color: #f2f2f2;
   opacity: 0, 3;
   text-align: center;
+}
+.container1 {
+  font-size: 30px;
+  padding-left: 15px;
+  background-color: #dee57c;
+}
+#tabla {
+  margin: 50px;
+}
+button {
+  width: 250px;
 }
