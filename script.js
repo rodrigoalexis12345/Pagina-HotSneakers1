@@ -60,8 +60,8 @@ function guardar() {
 //sacamos el const name de la L194
 function buscar() {
   const id = nombre_buscar.value;
-  const url_busqueda = url_api + id; //concatenamos la ruta
-  //
+  const url_busqueda = url_api + id;
+
   axios
     .get(url_busqueda)
     .then(function (response) {
@@ -83,13 +83,13 @@ function buscar() {
         response.data.favoriteshoebrand +
         "</td>" +
         "</tr>";
-
-      // Inserción dentro del código
       document.getElementById("tablanombre").insertRow(-1).innerHTML = fila;
     })
     .catch(function (error) {
       console.log(error);
     });
+
+  // Inserción dentro del código
 }
 //Metodo eliminar por nombre DELETE
 function eliminar() {
@@ -104,23 +104,6 @@ function eliminar() {
       console.log(error);
     });
 }
+
 //put
-// Función para buscar cliente por nombre y apellido
-function buscar() {
-  const nombreApellido = document.getElementById("nombre_buscar").value;
-  const urlBusqueda = `http://tu-api.com/clientes/${nombreApellido}`;
-
-  axios
-    .get(urlBusqueda)
-    .then(function (response) {
-      // Lógica para mostrar los datos del cliente en la tabla
-      // ... Aquí se mostrarían los datos en la tabla según tu lógica actual ...
-    })
-    .catch(function (error) {
-      console.error("Error al buscar cliente:", error);
-    });
-}
-
-// Función para actualizar cliente por nombre y apellido
-
 //put
