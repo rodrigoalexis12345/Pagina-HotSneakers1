@@ -231,6 +231,106 @@
         </div>
       </div>
     </div>
+    <!-- Implementacion backend-->
+    <div class="container1">
+      <!-- Registro de clientes -->
+      <div class="section">
+        <h4 class="titulo">Registro de Empleados</h4>
+        <form action="">
+          <!-- Formulario de registro de clientes -->
+          <label class="label" for="">namesandsurnamesofemployees:</label>
+          <input
+            type="text"
+            name=""
+            id="namesandsurnamesofemployees"
+          /><br /><br />
+          <label for="">employeeage:</label>
+          <input type="text" name="" id="employeeage" /><br /><br />
+          <label for="">roleinthecompany:</label>
+          <input type="text" name="" id="roleinthecompany" /><br /><br />
+          <label for="">startdateinthecompany:</label>
+          <input type="text" name="" id="startdateinthecompany" /><br /><br />
+          <label for="">workinghours:</label>
+          <input type="text" name="" id="workinghours" /><br /><br />
+          <label for="">freedays:</label>
+          <input type="text" name="" id="freedays" /><br /><br />
+          <label for="">sure:</label>
+          <input type="text" name="" id="sure" /><br /><br />
+          <label for="">phonenumber1:</label>
+          <input type="text" name="" id="phonenumber1" /><br /><br />
+          <label for="">ID:</label>
+          <input type="text" name="" id="ID" /><br /><br />
+          <button onclick="guardar1()">Guardar colaborador</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container2">
+      <!-- Listado de  colaboradores -->
+      <div class="section">
+        <h4>Listado de Empleados</h4>
+        <button onclick="listar1()">Listar Empleados</button><br />
+        <table id="tabla1">
+          <!-- Tabla de listado de clientes -->
+          <thead id="thead">
+            <tr>
+              <th>namesandsurnamesofemployees</th>
+              <th>employeeage</th>
+              <th>roleinthecompany</th>
+              <th>startdateinthecompany</th>
+              <th>workinghours</th>
+              <th>freedays</th>
+              <th>sure</th>
+              <th>phonenumber1</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container3">
+      <!-- Búsqueda del colaborador por su edad -->
+      <div class="section">
+        <h4>Búsqueda empleado por su Edad</h4>
+        <label for="">Ingrese la edad del colaborador</label>
+        <input type="text" id="edad_buscar" />
+        <button onclick="buscar1()">Buscar</button>
+        <table id="tablaedad">
+          <!-- Tabla de búsqueda por nombre -->
+          <thead id="theadnombre">
+            <tr>
+              <th>namesandsurnamesofemployees</th>
+              <th>employeeage</th>
+              <th>roleinthecompany</th>
+              <th>startdateinthecompany</th>
+              <th>workinghours</th>
+              <th>freedays</th>
+              <th>sure</th>
+              <th>phonenumber1</th>
+              <th>ID</th>
+            </tr>
+          </thead>
+          <tbody id="tbodynombre"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container4">
+      <!-- Eliminación por edad -->
+      <div class="section">
+        <h4>Eliminacion por edad</h4>
+        <input type="text" name="" id="elimina_edad" />
+        <button onclick="eliminar1()">Eliminar</button>
+      </div>
+    </div>
+
+    <!-- Implementacion backend-->
+    <!--Scripts-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--Scripts-->
     <a
       target="_blank"
       href="https://rodrigoalexis12345.github.io/Pagina-HotSneakers1/Inventario.html"

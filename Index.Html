@@ -20,7 +20,7 @@
             <li><a target="_blank" href="https://rodrigoalexis12345.github.io/Pagina-HotSneakers1/Ubicacion.html">Ubicaciones</a></li> <!-- Enlace a la página de ubicaciones (se abre en una nueva pestaña) -->
             <li><a href="#acerca-de-nosotros">Acerca de Nosotros</a></li> <!-- Enlace a la sección "Acerca de Nosotros" de la misma página -->
             <li><a target="_blank" href="http://127.0.0.1:5500/calificacion.html">Reseñas </a></li> <!-- Enlace a la sección de reseñas (aún no definida) -->
-            <li><a target="_blank" href="https://rodrigoalexis12345.github.io/Pagina-HotSneakers1/Colaboradores.html">Colaboradores</a></li> <!-- Enlace a la página de colaboradores (se abre en una nueva pestaña) -->
+            <li><a target="_blank" href="Colaboradores.html">Colaboradores</a></li> <!-- Enlace a la página de colaboradores (se abre en una nueva pestaña) -->
         <ul>
         </nav>
      </header>
@@ -154,81 +154,93 @@
   <!--Implementacion de backend a pagina-->
 <!--le ponemos id por que vamos ingresar datos a los formularios
 y por eso le pónemos su identificador a cada input-->
- <div class="container1">
-  <h1 class="titulo">Registro de clientes</h1>
-  <form action="">
-    <label for="">nameandsurname:</label>
-    <input type="text" name="" id="nameandsurname"><br><br>
-    <label for="">age:</label>
-    <input type="text" name="" id="age"><br><br>
-    <label for="">phonenumber:</label>
-    <input type="text" name="" id="phonenumber"><br><br>
-    <label for="">shippingaddress:</label>
-    <input type="text" name="" id="shippingaddress"><br><br>
-    <label for="">favoriteshoebrand:</label>
-    <input type="text" name="" id="favoriteshoebrand"><br><br>
-    <button onclick="guardar()">Guardar</button >
-  </form>
-  
-<!--TABLA DONDE SE MOSTRARAN TODOS LOS DATOS-->
-<br><br>
-  <h1>Listado de clientes</h1>
- <button onclick="listar()">Listar clientes</button> <br>
- <table id="tabla">
-  <thead id="thead">
-    <tr>
-      <th>nameandsurname</th>
-      <th>age</th>
-      <th>phonenumber</th>
-      <th>shippingaddress</th>
-      <th>favoriteshoebrand</th>
-    </tr>
-  </thead>
-  <tbody id="tbody">
+<div class="container1">
+  <!-- Registro de clientes -->
+  <div class="section">
+    <h4 class="titulo">Registro de clientes</h4>
+    <form action="">
+      <!-- Formulario de registro de clientes -->
+      <label class="label" for="">nameandsurname:</label>
+      <input type="text" name="" id="nameandsurname"><br><br>
+      <label for="">age:</label>
+      <input type="text" name="" id="age"><br><br>
+      <label for="">phonenumber:</label>
+      <input type="text" name="" id="phonenumber"><br><br>
+      <label for="">shippingaddress:</label>
+      <input type="text" name="" id="shippingaddress"><br><br>
+      <label for="">favoriteshoebrand:</label>
+      <input type="text" name="" id="favoriteshoebrand"><br><br>
+      <button onclick="guardar()">Guardar</button>
+    </form>
+  </div>
+</div>
 
-  </tbody>
- </table>
- <!--Busqueda por Nombre y apellido -->
-<br><br><br>
-<h1>Busqueda de cliente por su nombre y apellido</h1>
-<label for="">Ingrese el nombre y apellido del cliente</label>
-<input type="text" id="nombre_buscar">
-<button onclick="buscar()">Buscar</button>
-<!--busqueda por Nombre y apellido -->
-<!--Tabla de busqueda por nombre-->
-<table id="tablanombre">
-  <thead id="theadnombre">
-    <tr>
-      <th>nameandsurname</th>
-      <th>age</th>
-      <th>phonenumber</th>
-      <th>shippingaddress</th>
-      <th>favoriteshoebrand</th>
-    </tr>
-  </thead>
-  <tbody id="tbodynombre">
+<div class="container2">
+  <!-- Listado de clientes -->
+  <div class="section">
+    <h4>Listado de clientes</h4>
+    <button onclick="listar()">Listar clientes</button><br>
+    <table id="tabla">
+      <!-- Tabla de listado de clientes -->
+      <thead id="thead">
+        <tr>
+          <th>nameandsurname</th>
+          <th>age</th>
+          <th>phonenumber</th>
+          <th>shippingaddress</th>
+          <th>favoriteshoebrand</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
 
-  </tbody>
- </table>
- <!--fin tabla de busqueda-->
- <!--Eliminacion de datos-->
- <br><br><br>
- <h1>Eliminacion por nombre</h1>
- <input type="text" name="" id="elimina_nombre">
- <button onclick="eliminar()">Eliminar</button>
- <!-- Fin Eliminacion de datos-->
+<div class="container3">
+  <!-- Búsqueda de cliente por nombre y apellido -->
+  <div class="section">
+    <h4>Búsqueda de cliente por su nombre y apellido</h4>
+    <label for="">Ingrese el nombre y apellido del cliente</label>
+    <input type="text" id="nombre_buscar">
+    <button onclick="buscar()">Buscar</button>
+    <table id="tablanombre">
+      <!-- Tabla de búsqueda por nombre -->
+      <thead id="theadnombre">
+        <tr>
+          <th>nameandsurname</th>
+          <th>age</th>
+          <th>phonenumber</th>
+          <th>shippingaddress</th>
+          <th>favoriteshoebrand</th>
+        </tr>
+      </thead>
+      <tbody id="tbodynombre"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container4">
+  <!-- Eliminación por nombre -->
+  <div class="section">
+    <h4>Eliminacion por nombre</h4>
+    <input type="text" name="" id="elimina_nombre">
+    <button onclick="eliminar()">Eliminar</button>
+  </div>
+</div>
+
  
  <!--metodo put actualisar un cliente-->
   
 
   <!--metodo put actualisar un cliente-->
- </div>
+ 
  <script src="script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
  
  
 <!--Implementacion de backend a pagina-->
+
  <!--Foter-->
  <footer>
     <img src="Imagenes/Hotsenaker.jpg" alt="Logo HotSneaker" class="Logo"> <!-- Logotipo en el pie de página -->

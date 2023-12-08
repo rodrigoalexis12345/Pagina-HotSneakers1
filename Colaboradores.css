@@ -195,3 +195,47 @@ h1:hover {
   transition: 1s;
   transition-delay: 0.75s;
 }
+/*Tabla backend*/
+/*ESTILO TABLAS BACKEND*/
+.container1 {
+  background-color: #dee57c;
+  padding: 20px;
+  width: 100%;
+}
+.container2,
+.container3,
+.container4 {
+  background-color: #dee57c;
+  text-align: center;
+  width: 100%;
+}
+th {
+  padding-right: 40px;
+  background-color: #4fc3dc;
+  font-size: 18px;
+  border: solid 2px;
+}
+
+h4 {
+  font-size: 35px;
+  color: rgba(9, 24, 229, 0.941);
+}
+/*Ingrese el nombre del cliente*/
+label {
+  font-size: 22px;
+}
+/*Espacios en blanco input*/
+input {
+  font-size: 20px;
+}
+button {
+  font-size: 20px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+/*Contenido que aparece cuando apretas button*/
+td {
+  font-size: 15px;
+  border: solid 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
