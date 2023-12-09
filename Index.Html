@@ -154,6 +154,7 @@
   <!--Implementacion de backend a pagina-->
 <!--le ponemos id por que vamos ingresar datos a los formularios
 y por eso le pónemos su identificador a cada input-->
+<h1 class="Pedidos">Clientes</h1>
 <div class="container1">
   <!-- Registro de clientes -->
   <div class="section">
@@ -238,8 +239,190 @@ y por eso le pónemos su identificador a cada input-->
  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
  
- 
 <!--Implementacion de backend a pagina-->
+
+<!--Pedidos de clientes backend-->
+<h1 class="Pedidos">Pedidos</h1>
+<div class="container1">
+  <!-- Registro de Pedidos -->
+  <div class="section">
+    <h4 class="titulo">Registro de Pedidos</h4>
+    <form action="">
+      <!-- Formulario de registro de clientes -->
+      <label class="label" for="">customerwhoplacedtheorder:</label>
+      <input type="text" name="" id="customerwhoplacedtheorder"><br><br>
+      <label for="">orderedproducts:</label>
+      <input type="text" name="" id="orderedproducts"><br><br>
+      <label for="">product1:</label>
+      <input type="text" name="" id="product1"><br><br>
+      <label for="">amount1:</label>
+      <input type="text" name="" id="amount1"><br><br>
+      <label for="">unitprice1:</label>
+      <input type="text" name="" id="unitprice1"><br><br>
+      <label for="">product2:</label>
+      <input type="text" name="" id="product2"><br><br>
+      <label for="">amount2:</label>
+      <input type="text" name="" id="amount2"><br><br>
+      <label for="">unitprice2:</label>
+      <input type="text" name="" id="unitprice2"><br><br>
+      <label for="">orderstatus:</label>
+      <input type="text" name="" id="orderstatus"><br><br>
+      <label for="">shippingaddrees:</label>
+      <input type="text" name="" id="shippingaddrees"><br><br>
+      <label for="">card:</label>
+      <input type="text" name="" id="card"><br><br>
+      <label for="">totaltopay:</label>
+      <input type="text" name="" id="totaltopay"><br><br>
+      <button onclick="guardar3()">Guardar Pedido</button>
+    </form>
+  </div>
+</div>
+
+<div class="container2">
+  <!-- Listado de clientes -->
+  <div class="section">
+    <h4>Listado de Pedidos</h4>
+    <button onclick="listar3()">Listar Pedidos</button><br>
+    <table id="tabla3">
+      <!-- Tabla de listado de clientes -->
+      <thead id="thead">
+        <tr>
+          <th class="n10">customerwhoplacedtheorder</th>
+          <th class="n11">orderedproducts</th>
+          <th class="n12">product1</th>
+          <th class="n13">amount1</th>
+          <th class="n14">unitprice1</th>
+          <th class="n15">product2</th>
+          <th class="n16">amount2</th>
+          <th class="n17">unitprice2</th>
+          <th class="n18">orderstatus</th>
+          <th class="n19">shippingaddrees</th>
+          <th class="n20">card</th>
+          <th class="n21">totaltopay</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container3">
+  <!-- Búsqueda de cliente por nombre y apellido -->
+  <div class="section">
+    <h4>Búsqueda del pedido por su customerwhoplacedtheorder  </h4>
+    <label for="">Ingrese el nombre y apellido del cliente</label>
+    <input type="text" id="customerwhoplacedtheorder_buscar">
+    <button onclick="buscar3()">Buscar</button>
+    <table id="tablacustomerwhoplacedtheorder">
+      <!-- Tabla de búsqueda por nombre -->
+      <thead id="theadnombre">
+        <tr>
+          <th class="n10">customerwhoplacedtheorder</th>
+          <th class="n11">orderedproducts</th>
+          <th class="n12">product1</th>
+          <th class="n13">amount1</th>
+          <th class="n14">unitprice1</th>
+          <th class="n15">product2</th>
+          <th class="n16">amount2</th>
+          <th class="n17">unitprice2</th>
+          <th class="n18">orderstatus</th>
+          <th class="n19">shippingaddrees</th>
+          <th class="n20">card</th>
+          <th class="n21">totaltopay</th>
+        </tr>
+      </thead>
+      <tbody id="tbodynombre"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container4">
+  <!-- Eliminación por nombre -->
+  <div class="section">
+    <h4>Eliminacion por customerwhoplacedtheorder</h4>
+    <input type="text" name="" id="elimina_customerwhoplacedtheorder">
+    <button onclick="eliminar3()">Eliminar</button>
+  </div>
+</div>
+
+<!--Pedidos de clientes backend-->
+
+<!--backend productos-->
+<h1 class="Pedidos">Productos</h1>
+<div class="container1">
+  <!-- Registro de clientes -->
+  <div class="section">
+    <h4 class="titulo">Registro de Productos</h4>
+    <form action="">
+      <!-- Formulario de registro de clientes -->
+      <label class="label" for="">Productname:</label>
+      <input type="text" name="" id="Productname"><br><br>
+      <label for="">colors:</label>
+      <input type="text" name="" id="colors"><br><br>
+      <label for="">stock:</label>
+      <input type="text" name="" id="stock"><br><br>
+      <label for="">sizes:</label>
+      <input type="text" name="" id="sizes"><br><br>
+      <label for="">Productstatus:</label>
+      <input type="text" name="" id="Productstatus"><br><br>
+      <button onclick="guardar4()">Guardar</button>
+    </form>
+  </div>
+</div>
+
+<div class="container2">
+  <!-- Listado de clientes -->
+  <div class="section">
+    <h4>Listado de Productos</h4>
+    <button onclick="listar4()">Listar Productos</button><br>
+    <table id="tabla4">
+      <!-- Tabla de listado de clientes -->
+      <thead id="thead">
+        <tr>
+          <th class="th1">Productname</th>
+          <th class="th2">colors</th>
+          <th class="th3">stock</th>
+          <th class="th4">sizes</th>
+          <th class="th5">Productstatus</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container3">
+  <!-- Búsqueda de cliente por nombre y apellido -->
+  <div class="section">
+    <h4>Búsqueda de producto por su Productname</h4>
+    <label for="">Ingrese el Productname del producto</label>
+    <input type="text" id="Productname_buscar">
+    <button onclick="buscar4()">Buscar</button>
+    <table id="tablaProductname">
+      <!-- Tabla de búsqueda por nombre -->
+      <thead id="theadnombre">
+        <tr>
+          <th class="th1">Productname</th>
+          <th class="th2">colors</th>
+          <th class="th3">stock</th>
+          <th class="th4">sizes</th>
+          <th class="th5">Productstatus</th>
+        </tr>
+      </thead>
+      <tbody id="tbodynombre"></tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container4">
+  <!-- Eliminación por nombre -->
+  <div class="section">
+    <h4>Eliminacion por Productname</h4>
+    <input type="text" name="" id="elimina_Productname">
+    <button onclick="eliminar4()">Eliminar</button>
+  </div>
+</div>
+<!--backend productos-->
 
  <!--Foter-->
  <footer>

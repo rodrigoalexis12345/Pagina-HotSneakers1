@@ -209,5 +209,91 @@
         </div>
       </div>
     </div>
+    <!--Implementacion de backend a pagina -->
+    <!-- Implementacion backend-->
+    <div class="container1">
+      <!-- Registro de Inventario  -->
+      <div class="section">
+        <h4 class="titulo">Registro de Inventario</h4>
+        <form action="">
+          <!-- Formulario de registro de clientes -->
+          <label class="label" for="">productname:</label>
+          <input type="text" name="" id="productname" /><br /><br />
+          <label for="">productcode:</label>
+          <input type="text" name="" id="productcode" /><br /><br />
+          <label for="">currentExistence:</label>
+          <input type="text" name="" id="currentExistence" /><br /><br />
+          <label for="">minimumReplacementQuantity:</label>
+          <input
+            type="text"
+            name=""
+            id="minimumReplacementQuantity"
+          /><br /><br />
+          <label for="">storageLocation1:</label>
+          <input type="text" name="" id="storageLocation1" /><br /><br />
+          <button onclick="guardar2()">Guardar Inventario</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container2">
+      <!-- Listado de  colaboradores -->
+      <div class="section">
+        <h4>Listado de Inventario</h4>
+        <button onclick="listar2()">Listar Inventario</button><br />
+        <table id="tabla2">
+          <!-- Tabla de listado de clientes -->
+          <thead id="thead">
+            <tr>
+              <th>productname</th>
+              <th>productcode</th>
+              <th>currentExistence</th>
+              <th>minimumReplacementQuantity</th>
+              <th>storageLocation1</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container3">
+      <!-- Búsqueda del colaborador por su edad -->
+      <div class="section">
+        <h4>Búsqueda de Inventario por su productname</h4>
+        <label for="">Ingrese el productname de su Inventario</label>
+        <input type="text" id="productname_buscar" />
+        <button onclick="buscar2()">Buscar</button>
+        <table id="tablaproductname">
+          <!-- Tabla de búsqueda por nombre -->
+          <thead id="theadnombre">
+            <tr>
+              <th>productname</th>
+              <th>productcode</th>
+              <th>currentExistence</th>
+              <th>minimumReplacementQuantity</th>
+              <th>storageLocation1</th>
+            </tr>
+          </thead>
+          <tbody id="tbodynombre"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container4">
+      <!-- Eliminación por edad -->
+      <div class="section">
+        <h4>Eliminacion Inventario por productname</h4>
+        <input type="text" name="" id="elimina_productname" />
+        <button onclick="eliminar2()">Eliminar</button>
+      </div>
+    </div>
+
+    <!-- Implementacion backend-->
+    <!--Implementacion de backend a pagina -->
+    <!--Scripts-->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--Scripts-->
   </body>
 </html>
