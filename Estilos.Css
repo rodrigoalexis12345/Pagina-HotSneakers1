@@ -389,7 +389,7 @@ footer {
   opacity: 0, 3;
   text-align: center;
 }
-/*ESTILO TABLAS BACKEND LINEA 392 */ 
+/*ESTILO TABLAS BACKEND LINEA 392 */
 /*DE linea 393 a 402 son los container*/
 .container1 {
   background-color: #dee57c;
@@ -413,9 +413,9 @@ h4 {
   color: rgba(9, 24, 229, 0.941);
 }
 
-form{
+form {
   margin: 0px 1030px 0px 5px;
-  padding: 15px 0px 10px 15px ;
+  padding: 15px 0px 10px 15px;
   border-radius: 5%;
 }
 
@@ -444,7 +444,7 @@ button {
   transition: 1s;
 }
 
-button:hover{
+button:hover {
   color: #ff0800;
   background-color: #59c0d7;
 }
@@ -487,3 +487,78 @@ td {
   font-size: 23px;
   padding-right: 207px;
 }
+td:nth-child(1) {
+  /* Estilos para la segunda columna */
+  background-color: #ffd700;
+  color: #0b3c5d;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+
+td:nth-child(2) {
+  /* Estilos para la segunda columna */
+  background-color: #2ecc71;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(3) {
+  /* Estilos para la segunda columna */
+  background-color: #FFA500;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(4) {
+  /* Estilos para la segunda columna */
+  background-color: #f7e2e2;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(5) {
+  /* Estilos para la segunda columna */
+  background-color: #87CEEB;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(6) {
+  /* Estilos para la segunda columna */
+  background-color: #ffd700;
+  color: #0b3c5d;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+
+td:nth-child(7) {
+  /* Estilos para la segunda columna */
+  background-color: #2ecc71;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(8) {
+  /* Estilos para la segunda columna */
+  background-color: #FFA500;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(9) {
+  /* Estilos para la segunda columna */
+  background-color: #f7e2e2;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(10) {
+  /* Estilos para la segunda columna */
+  background-color: #87CEEB;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(11) {
+  /* Estilos para la segunda columna */
+  background-color: #b34343;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(12) {
+  /* Estilos para la segunda columna */
+  background-color: #b0ceda;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+

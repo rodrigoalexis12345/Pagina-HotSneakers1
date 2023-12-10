@@ -231,9 +231,33 @@ y por eso le pónemos su identificador a cada input-->
 
  
  <!--metodo put actualisar un cliente-->
-  
+ <div class="container1">
+  <h4>Actualizar Cliente</h4>
+  <!-- Formulario para actualizar cliente -->
+  <form id="updateForm">
+    <label for="id_actualizar">Nombre y apellido del Cliente a Actualizar:</label>
+    <input type="text" id="nameandsurname_actualizar" name="id_actualizar"><br><br>
 
-  <!--metodo put actualisar un cliente-->
+    <label for="newNameAndSurname">Nuevo Nombre y Apellido:</label>
+    <input type="text" id="newNameAndSurname" name="newNameAndSurname"><br><br>
+
+    <label for="newAge">Nueva Edad:</label>
+    <input type="text" id="newAge" name="newAge"><br><br>
+
+    <label for="newPhoneNumber">Nuevo Número de Teléfono:</label>
+    <input type="text" id="newPhoneNumber" name="newPhoneNumber"><br><br>
+
+    <label for="newShippingAddress">Nueva Dirección de Envío:</label>
+    <input type="text" id="newShippingAddress" name="newShippingAddress"><br><br>
+
+    <label for="newFavoriteShoeBrand">Nueva Marca de Zapatos Favorita:</label>
+    <input type="text" id="newFavoriteShoeBrand" name="newFavoriteShoeBrand"><br><br>
+
+    <button type="button" onclick="actualizar()">Actualizar Cliente</button>
+  </form>
+</div>
+
+  <!--metodo put  Fin actualisar un cliente-->
  
  <script src="script.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -248,7 +272,7 @@ y por eso le pónemos su identificador a cada input-->
   <div class="section">
     <h4 class="titulo">Registro de Pedidos</h4>
     <form action="">
-      <!-- Formulario de registro de clientes -->
+      <!-- Formulario de registro de Pedidos -->
       <label class="label" for="">customerwhoplacedtheorder:</label>
       <input type="text" name="" id="customerwhoplacedtheorder"style="width: 300px;"><br><br>
       <label for="">orderedproducts:</label>
@@ -279,7 +303,7 @@ y por eso le pónemos su identificador a cada input-->
 </div>
 
 <div class="container2">
-  <!-- Listado de clientes -->
+  <!-- Listado de Pedidos -->
   <div class="section">
     <h4>Listado de Pedidos</h4>
     <button onclick="listar3()">Listar Pedidos</button><br>
@@ -307,7 +331,7 @@ y por eso le pónemos su identificador a cada input-->
 </div>
 
 <div class="container3">
-  <!-- Búsqueda de cliente por nombre y apellido -->
+  <!-- Búsqueda de Pediddos por customerwhoplacetheorder -->
   <div class="section">
     <h4>Búsqueda del pedido por su customerwhoplacedtheorder  </h4>
     <label for="">Ingrese el nombre y apellido del cliente</label>
@@ -337,13 +361,18 @@ y por eso le pónemos su identificador a cada input-->
 </div>
 
 <div class="container4">
-  <!-- Eliminación por nombre -->
+  <!-- Eliminación por customerwhoplacedtheorder -->
   <div class="section">
     <h4>Eliminacion por customerwhoplacedtheorder</h4>
     <input type="text" name="" id="elimina_customerwhoplacedtheorder">
     <button onclick="eliminar3()">Eliminar</button>
   </div>
 </div>
+<!--metodo put actualisar un Pedido-->
+<!-- Actualizar Pedido PUT -->
+
+
+<!--metodo put  Fin actualisar un Pedido-->
 
 <!--Pedidos de clientes backend-->
 
@@ -371,12 +400,12 @@ y por eso le pónemos su identificador a cada input-->
 </div>
 
 <div class="container2">
-  <!-- Listado de clientes -->
+  <!-- Listado de Productos -->
   <div class="section">
     <h4>Listado de Productos</h4>
     <button onclick="listar4()">Listar Productos</button><br>
     <table id="tabla4">
-      <!-- Tabla de listado de clientes -->
+      <!-- Tabla de listado de Productos -->
       <thead id="thead">
         <tr>
           <th class="th1">Productname</th>
@@ -392,7 +421,7 @@ y por eso le pónemos su identificador a cada input-->
 </div>
 
 <div class="container3">
-  <!-- Búsqueda de cliente por nombre y apellido -->
+  <!-- Búsqueda de un producto por nombre del producto -->
   <div class="section">
     <h4>Búsqueda de producto por su Productname</h4>
     <label for="">Ingrese el Productname del producto</label>
@@ -415,7 +444,7 @@ y por eso le pónemos su identificador a cada input-->
 </div>
 
 <div class="container4">
-  <!-- Eliminación por nombre -->
+  <!-- Eliminación por nombre del producto -->
   <div class="section">
     <h4>Eliminacion por Productname</h4>
     <input type="text" name="" id="elimina_Productname">

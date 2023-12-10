@@ -265,3 +265,59 @@ td {
   border: solid 2px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+td:nth-child(1) {
+  /* Estilos para la segunda columna */
+  background-color: #ffd700;
+  color: #0b3c5d;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+
+td:nth-child(2) {
+  /* Estilos para la segunda columna */
+  background-color: #2ecc71;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(3) {
+  /* Estilos para la segunda columna */
+  background-color: #FFA500;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(4) {
+  /* Estilos para la segunda columna */
+  background-color: #f7e2e2;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(5) {
+  /* Estilos para la segunda columna */
+  background-color: #87CEEB;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(6) {
+  /* Estilos para la segunda columna */
+  background-color: #ffd700;
+  color: #0b3c5d;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+
+td:nth-child(7) {
+  /* Estilos para la segunda columna */
+  background-color: #2ecc71;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(8) {
+  /* Estilos para la segunda columna */
+  background-color: #FFA500;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}
+td:nth-child(9) {
+  /* Estilos para la segunda columna */
+  background-color: #f7e2e2;
+  color: #333;
+  /* Agrega otros estilos que desees para estas celdas */
+}

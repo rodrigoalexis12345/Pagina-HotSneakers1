@@ -109,8 +109,37 @@ function eliminar() {
     });
 }
 
-//put
-//put
+//put Cliente 121
+// Actualizar cliente PUT
+function actualizar() {
+  const id = nameandsurname_actualizar.value; // Obtén el ID del cliente que deseas actualizar
+  const url_actualizar = url_api + id;
+
+  const datos = JSON.stringify({
+    nameandsurname: newNameAndSurname.value,
+    age: newAge.value,
+    phonenumber: newPhoneNumber.value,
+    shippingaddress: newShippingAddress.value,
+    favoriteshoebrand: newFavoriteShoeBrand.value,
+  });
+
+  axios
+    .put(url_actualizar, datos, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+    .then(function (response) {
+      alert("Cliente actualizado correctamente");
+      // Realizar alguna acción adicional si es necesario
+    })
+    .catch(function (error) {
+      console.error("Error al actualizar el cliente:", error);
+      alert("Ocurrió un error al actualizar el cliente");
+    });
+}
+
+//put Final
 
 //Empleados
 function listar1() {
@@ -508,7 +537,7 @@ function buscar3() {
     });
 }
 //Metodo bucar por nombre
-//Eliminar Inventario por customerwhoplacedtheorder
+//Eliminar Pedido por customerwhoplacedtheorder
 function eliminar3() {
   const id = elimina_customerwhoplacedtheorder.value;
   const url_busqueda = url_api3 + id; //concatenamos la ruta
@@ -522,6 +551,10 @@ function eliminar3() {
     });
 }
 //Eliminar Colaborador
+// Actualizar Pedido PUT
+
+
+//put Final
 //PEDIDOS BACKEND FINAL
 //PRODUCTOS BACKEND
 //Listar Productos
@@ -610,7 +643,8 @@ function buscar4() {
         response.data.Productstatus +
         "</td>" +
         "</tr>";
-      document.getElementById("tablaProductname").insertRow(-1).innerHTML = fila;
+      document.getElementById("tablaProductname").insertRow(-1).innerHTML =
+        fila;
     })
     .catch(function (error) {
       console.log(error);
