@@ -220,19 +220,44 @@ h4 {
   font-size: 35px;
   color: rgba(9, 24, 229, 0.941);
 }
+
+form{
+  margin: 0px 1030px 0px 5px;
+  padding: 15px 0px 10px 15px ;
+  border-radius: 5%;
+}
+
 /*Ingrese el nombre del cliente*/
 label {
   font-size: 22px;
+  border-radius: 4px;
 }
 /*Espacios en blanco input*/
 input {
   font-size: 20px;
+  font-size: 22px;
+  border-radius: 4px;
+  color: blue;
+  background-color: rgb(159, 249, 243);
 }
 button {
   font-size: 20px;
   cursor: pointer;
   padding-bottom: 10px;
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  margin: 15px 0px 15px 0px;
+  color: #064553;
+  background-color: rgb(255, 98, 0);
+  transition: 1s;
 }
+
+
+button:hover{
+  color: #ff0800;
+  background-color: #59c0d7;
+}
+
 /*Contenido que aparece cuando apretas button*/
 td {
   font-size: 15px;
